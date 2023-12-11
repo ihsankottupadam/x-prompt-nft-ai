@@ -57,7 +57,7 @@ class _LinkWalletScreenState extends State<LinkWalletScreen> {
 
     Uri redirectUrl;
     if (Platform.isAndroid) {
-      redirectUrl = Uri.parse('aimuse://com.example.x_prompt/auth');
+      redirectUrl = Uri.parse('https://com.example.x_prompt/auth');
     } else if (Platform.isIOS) {
       redirectUrl =
           Uri.parse('com.web3auth.flutter.web3authFlutterExample://openlogin');
@@ -72,7 +72,7 @@ class _LinkWalletScreenState extends State<LinkWalletScreen> {
         network: Network.testnet,
         redirectUrl: redirectUrl,
         whiteLabel:
-            WhiteLabelData(dark: true, name: "AI Muse", theme: themeMap),
+            WhiteLabelData(dark: true, name: "x_prompt", theme: themeMap),
       ),
     );
   }
@@ -81,7 +81,7 @@ class _LinkWalletScreenState extends State<LinkWalletScreen> {
   var connector = WalletConnect(
       bridge: 'https://bridge.walletconnect.org',
       clientMeta: const PeerMeta(
-          name: 'AI Muse',
+          name: 'x_prompt',
           description: 'An app for converting pictures to NFT',
           url: 'https://walletconnect.org',
           icons: [

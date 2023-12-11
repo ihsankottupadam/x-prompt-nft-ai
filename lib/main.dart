@@ -3,6 +3,7 @@ import 'package:x_prompt/core/theme.dart';
 import 'package:x_prompt/modules/authentication/screens/login_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:sizer/sizer.dart';
+import 'package:x_prompt/modules/bottom_nav/bottom_nav_bar.dart';
 
 void main(List<String> args) {
   runApp(const MyApp());
